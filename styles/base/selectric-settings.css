@@ -1,7 +1,6 @@
 select {
-    width: inherit !important;
-    height: inherit !important;
-    clip: inherit !important;
+    width: 86px;
+    height: 35px;
 }
 
 .selectric {
