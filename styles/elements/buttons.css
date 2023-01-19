@@ -1,0 +1,57 @@
+button {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: url('../../images/icons/cursor.svg'), pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 158px;
+    height: 45px;
+    box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
+}
+
+.btn-white {
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #DADEE2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.btn-white:hover,
+.btn-green:focus {
+    border: 1px solid #333E50;
+}
+
+.btn-white:disabled {
+    color: #ADB4BF;
+}
+
+.btn-green {
+    background: #95CE5A;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.btn-green:hover {
+    background: #8CC459;
+    filter: drop-shadow(0px 5px 8px rgba(149, 206, 90, 0.8));
+}
+
+.btn-green:focus {
+    border: 1px solid #333E50;
+    color: #333E50;
+}
+
+.btn-green:disabled {
+    background: #ADB4BF;
+    box-shadow: none;
+}

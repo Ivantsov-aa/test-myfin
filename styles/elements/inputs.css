@@ -1,0 +1,87 @@
+form {
+    position: relative;
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 15px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    background: url('../../images/icons/search.svg') no-repeat center;
+}
+
+input {
+    width: 100%;
+    height: 45px;
+    background: #F1F4F7;
+    border: 1px solid #DADEE2;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 40px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #ADB4BF;
+}
+
+input:focus {
+    background: #fff;
+    border: 1px solid #9299A2;
+}
+
+input.filled {
+    background: #fff;
+}
+
+input:disabled {
+    background: #E4E9EE;
+}
+
+form.disabled::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+    background: url('../../images/icons/disabled.svg') no-repeat center;
+}
+
+.form__clear-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+    top: 12px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form__clear-btn.active {
+    visibility: visible;
+}
+
+.form__clear-btn::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../../images/icons/clear-btn.svg') no-repeat center;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.form__clear-btn.active::after {
+    opacity: 1;
+}

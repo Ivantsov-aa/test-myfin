@@ -1,0 +1,114 @@
+.top-content {
+    padding: 40px 0;
+    border-bottom: 1px solid #E8ECEF;
+}
+
+.top-content__inner {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.top-content__row-top {
+    position: relative;
+    padding-right: 307px;
+}
+
+.top-content__row-top::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background: url('../../images/content/stock.png') no-repeat center;
+    right: 33px;
+    top: 13px;
+}
+
+.top-content__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.top-content__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text__show-more-btn {
+    display: none;
+}
+
+.top-content__form {
+    margin-top: 20px;
+}
+
+@media (max-width: 735px) {
+    .top-content {
+        padding: 30px 0;
+    }
+
+    .top-content__row-top {
+        padding: 0;
+    }
+
+    .top-content__row-top::after {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-content__title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .top-content__text {
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        max-height: 72px;
+        transition: max-height 0.3s;
+    }
+
+    .top-content__text.show {
+        overflow: visible;
+        max-height: 300px;
+        transition: all 0.3s;
+    }
+
+    .text__show-more-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #388EC3;
+        height: auto;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        margin-top: 10px;
+        transition: color .3s;
+    }
+
+    .text__show-more-btn svg {
+        transform: rotate(90deg);
+        transition: transform 0.3s;
+    }
+
+    .text__show-more-btn.active {
+        color: #95CE5A;
+        transition: color .3s;
+    }
+
+    .text__show-more-btn.active svg {
+        transform: rotate(-90deg);
+        transition: transform 0.3s;
+    }
+
+    .text__show-more-btn.active path {
+        fill: #95CE5A;
+    }
+}

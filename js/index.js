@@ -32,6 +32,12 @@ $('.form__clear-btn').on('click', function () {
     $(this).removeClass('active');
 })
 
+$('.text__show-more-btn').on('click', function () {
+    console.log(this);
+    $(this).toggleClass('active');
+    $('.top-content__text').toggleClass('show');
+})
+
 function setDaysInMonthInSelect() {
     let month = new Date().getMonth() + 1;
     let year = new Date().getFullYear();
@@ -52,7 +58,8 @@ $(function () {
                 <path d="M6.48995 8.95404L10.3089 5.11356C10.5637 4.85872 10.5637 4.44596 10.3089 4.19113C10.0541 3.93629 9.64488 3.93629 9.39363 4.19113L6.00181 7.60449L2.6064 4.19113C2.35156 3.93629 1.94239 3.93629 1.69114 4.19113C1.43631 4.44596 1.43631 4.85872 1.69114 5.11356L5.51008 8.95404C5.64648 9.09043 5.82594 9.15145 6.00181 9.14068C6.17768 9.15145 6.35714 9.09043 6.48995 8.95404Z" fill="#333E50"/>
             </svg>
         </b>
-        `
+        `,
+        nativeOnMobile: true
     });
 });
 
@@ -268,7 +275,7 @@ const newsToCalendar = [
 function setNewsToCalendar(list) {
     for (let i in list) {
         let fragment = '';
-        list[i].news.map(item => {
+        list[i].news.forEach(item => {
             fragment += `
                 <div class="news__row">
                     <p class="news__time ${item.special ? 'special' : ''}">${item.time}</p>
@@ -291,9 +298,3 @@ function setNewsToCalendar(list) {
 };
 
 setNewsToCalendar(newsToCalendar);
-
-$('.text__show-more-btn').on('click', function() {
-    console.log(this);
-    $(this).toggleClass('active');
-    $('.top-content__text').toggleClass('show');
-})
