@@ -16,6 +16,8 @@ button {
     height: 45px;
     -webkit-box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
     box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn-white {
