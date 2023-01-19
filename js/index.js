@@ -59,7 +59,8 @@ $(function () {
             </svg>
         </b>
         `,
-        disableOnMobile: false
+        disableOnMobile: false,
+        nativeOnMobile: false
     });
 });
 
