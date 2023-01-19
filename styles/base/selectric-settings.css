@@ -1,3 +1,9 @@
+select {
+    width: inherit !important;
+    height: inherit !important;
+    clip: inherit !important;
+}
+
 .selectric {
     border-radius: 3px;
     border: 1px solid #E8ECEF;
