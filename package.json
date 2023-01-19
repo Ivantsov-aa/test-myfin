@@ -1,0 +1,22 @@
+{
+  "name": "test-myfin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivantsov-aa/test-myfin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivantsov-aa/test-myfin/issues"
+  },
+  "homepage": "https://github.com/Ivantsov-aa/test-myfin#readme",
+  "dependencies": {
+    "selectric": "^1.13.0"
+  }
+}

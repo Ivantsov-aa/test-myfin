@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Bankiros-Test</title>
+    <link rel='stylesheet' href='node_modules/selectric/public/selectric.css'>
+    <link rel='stylesheet' href='styles/styles.css'>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='top-content'>
+            <div class='top-content__inner'>
+                <div class='top-content__row-top'>
+                    <h1 class='top-content__title'>Облигации в России</h1>
+                    <p class='top-content__text'>
+                        Облигации федерального, субфедерального займа, еврооблигации и облигации самых известных
+                        компаний России. Изучайте стоимость облигаций и ее изменение, доходность, купонные выплаты и
+                        многие другие показатели. Чтобы узнать больше про облигации и инвестирование в ценные
+                        бумаги,
+                        посетите наш <a href='#'>образовательный раздел</a> с множеством полезной информации.
+                    </p>
+                    <button class='text__show-more-btn'>
+                        Показать весь
+                        <svg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M7.04505 5.09172L3.84465 1.90927C3.63229 1.69691 3.28832 1.69691 3.07596 1.90927C2.8636 2.12164 2.8636 2.46261 3.07596 2.67198L5.92043 5.4985L3.07596 8.32802C2.8636 8.54038 2.8636 8.88136 3.07596 9.09073C3.28832 9.30309 3.63229 9.30309 3.84465 9.09073L7.04505 5.90827C7.15871 5.79462 7.20956 5.64506 7.20059 5.4985C7.20956 5.35194 7.15871 5.20239 7.04505 5.09172Z'
+                                fill='#388EC3' />
+                        </svg>
+                    </button>
+                </div>
+                <form class='top-content__form'>
+                    <input class='top-content__input' placeholder='Название или тикер' type='text' />
+                    <button class='form__clear-btn'></button>
+                </form>
+            </div>
+        </div>
+        <section class='investments-menu'>
+            <h2 class='investments-menu__title'>Все об инвестициях</h2>
+            <div class='investments-menu__categories'>
+                <div class='investments-menu__row top'>
+                    <div class='investments-menu__cell'>
+                        <div>
+                            <h3 class='cell__title'>Акции</h3>
+                            <p class='cell__text'>Покупка акций российских и мировых компаний</p>
+                        </div>
+                        <button class='btn-green'>Купить</button>
+                    </div>
+                    <div class='investments-menu__cell'>
+                        <div>
+                            <h3 class='cell__title'>Облигации</h3>
+                            <p class='cell__text'>Инвестируйте в ценные бумаги и зарабатывайте на процентах</p>
+                        </div>
+                        <button class='btn-green'>Подобрать</button>
+                    </div>
+                </div>
+                <div class='investments-menu__row middle'>
+                    <div class='investments-menu__cell'>
+                        <div>
+                            <h3 class='cell__title'>Дивиденды</h3>
+                            <p class='cell__text'>Размеры дивидендов и даты выплат на календаре</p>
+                        </div>
+                        <button class='btn-white'>Подробнее</button>
+                    </div>
+                    <div class='investments-menu__cell'>
+                        <div>
+                            <h3 class='cell__title'>Индивидуальный инвестиционный счет</h3>
+                            <p class='cell__text'>Откройте счет и увеличивайте доходность своих инвестиций</p>
+                        </div>
+                        <button class='btn-green'>Открыть ИИС</button>
+                    </div>
+                </div>
+                <div class='investments-menu__row bottom'>
+                    <div class='investments-menu__cell'>
+                        <div>
+                            <h3 class='cell__title'>Брокеры</h3>
+                            <p class='cell__text'>Инвестируйте вместе с профессионалами.</p>
+                        </div>
+                        <button class='btn-white'>Выбрать</button>
+                    </div>
+                    <div class='investments-menu__cell'>
+                        <div>
+                            <h3 class='cell__title'>Обучение</h3>
+                            <p class='cell__text'>Учитесь инвестировать БЕСПЛАТНО вместе с Банкирос</p>
+                        </div>
+                        <button class='btn-white'>Пройти обучение</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class='investments-statistic'>
+            <article class='investments-statistic__stocks'>
+                <div class='stocks__header'>
+                    <h2 class='investments-statistic__title'>Акции</h2>
+                    <select>
+                    </select>
+                </div>
+                <nav class='stocks__navigation-table'>
+                    <ul class='navigation-table__list'>
+                        <li><button class='navigation-table__button selected' data-value='leaders-growth'>Лидеры
+                                роста</button></li>
+                        <li><button class='navigation-table__button' data-value='yield-leaders'>Лидеры
+                                доходности</button>
+                        </li>
+                        <li><button class='navigation-table__button' disabled>Tab inactive</button></li>
+                    </ul>
+                </nav>
+                <table class='stocks__table-list'>
+                    <thead class='table-list__head'>
+                        <tr class='table-list__row'>
+                            <th class='table-list__cell'><span class='text-sm-title'>Тикер</span></th>
+                            <th class='table-list__cell'><span class='text-sm-title'>Посл. цена</span></th>
+                            <th class='table-list__cell'><span class='text-sm-title'>Изм.</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class='table-list__body'></tbody>
+                </table>
+                <div class='investments-statistic__footer'>
+                    <a class='link_arrow-icon' href='#'>
+                        Больше лидеров роста
+                        <svg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M7.04505 5.09172L3.84465 1.90927C3.63229 1.69691 3.28832 1.69691 3.07596 1.90927C2.8636 2.12164 2.8636 2.46261 3.07596 2.67198L5.92043 5.4985L3.07596 8.32802C2.8636 8.54038 2.8636 8.88136 3.07596 9.09073C3.28832 9.30309 3.63229 9.30309 3.84465 9.09073L7.04505 5.90827C7.15871 5.79462 7.20956 5.64506 7.20059 5.4985C7.20956 5.35194 7.15871 5.20239 7.04505 5.09172Z'
+                                fill='#388EC3' />
+                        </svg>
+                    </a>
+                    <p class='investments-statistic__update-info'>Обновлено в 12:30</p>
+                </div>
+            </article>
+            <article class='investments__calendar'>
+                <div>
+                    <h2 class='investments-statistic__title'>Экономический календарь</h2>
+                    <div class='calendar__news'></div>
+                </div>
+                <div class='investments-statistic__footer'>
+                    <a class='link_arrow-icon' href='#'>
+                        Больше событий
+                        <svg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M7.04505 5.09172L3.84465 1.90927C3.63229 1.69691 3.28832 1.69691 3.07596 1.90927C2.8636 2.12164 2.8636 2.46261 3.07596 2.67198L5.92043 5.4985L3.07596 8.32802C2.8636 8.54038 2.8636 8.88136 3.07596 9.09073C3.28832 9.30309 3.63229 9.30309 3.84465 9.09073L7.04505 5.90827C7.15871 5.79462 7.20956 5.64506 7.20059 5.4985C7.20956 5.35194 7.15871 5.20239 7.04505 5.09172Z'
+                                fill='#388EC3' />
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </article>
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src='node_modules/selectric/public/jquery.selectric.js'></script>
+    <script src='./js/index.js'></script>
+</body>
+
+</html>
