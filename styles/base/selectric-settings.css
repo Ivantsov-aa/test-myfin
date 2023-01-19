@@ -2,6 +2,8 @@
     border-radius: 3px;
     border: 1px solid #E8ECEF;
     background: #fff;
+    height: 35px;
+    width: 86px;
 }
 
 .selectric .button {
@@ -26,9 +28,10 @@
 }
 
 .selectric .label {
-    padding: 7.5px 27px 7.5px 10px;
+    padding: 7.5px 0;
+    padding-left: 10px;
     margin: 0;
-    height: 35px;
+    height: 34px;
 }
 
 .selectric .label,
@@ -36,5 +39,5 @@
 .selectric-items li.highlighted {
     background: #fff;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 19px;
 }
