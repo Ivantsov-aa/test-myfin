@@ -59,7 +59,7 @@ $(function () {
             </svg>
         </b>
         `,
-        disableOnMobile: true
+        disableOnMobile: false
     });
 });
 
