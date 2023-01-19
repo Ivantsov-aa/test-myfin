@@ -12,10 +12,11 @@ a:focus {
 
 .link_arrow-icon {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     gap: 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 

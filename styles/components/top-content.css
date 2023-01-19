@@ -69,17 +69,25 @@
         -webkit-line-clamp: 3;
         overflow: hidden;
         max-height: 72px;
+        -webkit-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
         transition: max-height 0.3s;
     }
 
     .top-content__text.show {
         overflow: visible;
         max-height: 300px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
     .text__show-more-btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 5px;
         font-size: 14px;
@@ -88,24 +96,41 @@
         height: auto;
         width: auto;
         background: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
         margin-top: 10px;
+        -webkit-transition: color .3s;
+        -o-transition: color .3s;
         transition: color .3s;
     }
 
     .text__show-more-btn svg {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
         transform: rotate(90deg);
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: -webkit-transform 0.3s;
+        -o-transition: transform 0.3s;
         transition: transform 0.3s;
+        transition: transform 0.3s, -webkit-transform 0.3s;
     }
 
     .text__show-more-btn.active {
         color: #95CE5A;
+        -webkit-transition: color .3s;
+        -o-transition: color .3s;
         transition: color .3s;
     }
 
     .text__show-more-btn.active svg {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: -webkit-transform 0.3s;
+        -o-transition: transform 0.3s;
         transition: transform 0.3s;
+        transition: transform 0.3s, -webkit-transform 0.3s;
     }
 
     .text__show-more-btn.active path {

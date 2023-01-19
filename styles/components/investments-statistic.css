@@ -3,11 +3,11 @@
     margin: auto;
     padding-bottom: 40px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     gap: 30px;
 }
 
@@ -26,12 +26,14 @@
 
 .stocks__header {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 15px;
 }
 
@@ -43,10 +45,11 @@
 
 .navigation-table__list {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px;
     position: relative;
     border-bottom: 1px solid #E8ECEF;
@@ -59,7 +62,8 @@
 .navigation-table__list button {
     position: relative;
     background: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     width: auto;
     height: auto;
     padding-bottom: 10px;
@@ -79,7 +83,9 @@
     background: #95CE5A;
     border-radius: 50px;
     bottom: -2px;
-    transform: translateX(-30%);
+    -webkit-transform: translateX(-30%);
+        -ms-transform: translateX(-30%);
+            transform: translateX(-30%);
     opacity: 0;
     z-index: 1;
 }
@@ -89,14 +95,18 @@
 }
 
 .navigation-table__list button.unselected::after {
-    animation: onUnselectedNavTab .5s;
+    -webkit-animation: onUnselectedNavTab .5s;
+            animation: onUnselectedNavTab .5s;
 }
 
 .navigation-table__list button.selected::after {
     width: 100%;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
-    animation: onSelectedNavTab .5s;
+    -webkit-animation: onSelectedNavTab .5s;
+            animation: onSelectedNavTab .5s;
 }
 
 .navigation-table__list button:disabled {
@@ -126,14 +136,19 @@
 }
 
 .table-list__cell-title-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 10px;
 }
 
 .table-list__cell-title-wrapper a {
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
 }
 
 .table-list__cell-title-wrapper p {
@@ -144,9 +159,15 @@
 }
 
 .table-list__cell-img-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #F1F4F7;
     border-radius: 50%;
     height: 30px;
@@ -154,7 +175,8 @@
 }
 
 .table-list__cell-img-wrapper img {
-    object-fit: scale-down;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
     width: 30px;
 }
 
@@ -165,8 +187,12 @@
 }
 
 .rates__value {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
     line-height: 20px;
     color: #ED2C35;
@@ -182,9 +208,14 @@
 }
 
 .table-list__cell-rates {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
 }
 
 .table-list__cell-rates::before {
@@ -203,12 +234,14 @@
 
 .investments-statistic__footer {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .investments-statistic__update-info {
@@ -218,9 +251,16 @@
 }
 
 .investments__calendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .investments__calendar h2 {
@@ -236,10 +276,12 @@
 }
 
 .news__row {
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 10px;
     padding: 10px 0;
     border-bottom: 1px solid #E8ECEF;
@@ -262,7 +304,8 @@
     height: 5px;
     border-radius: 50%;
     background: #ED2C35;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 
 .news__status-dot.green {
@@ -302,7 +345,10 @@
 
 @media (max-width: 735px) {
     .investments-statistic {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-bottom: 30px;
         gap: 20px;
     }
@@ -336,8 +382,13 @@
     }
 
     .investments-statistic__footer {
-        flex-direction: column-reverse;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         gap: 20px;
     }
 

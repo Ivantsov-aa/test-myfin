@@ -26,6 +26,22 @@ input {
     outline: none;
 }
 
+input::-webkit-input-placeholder {
+    color: #ADB4BF;
+}
+
+input::-moz-placeholder {
+    color: #ADB4BF;
+}
+
+input:-ms-input-placeholder {
+    color: #ADB4BF;
+}
+
+input::-ms-input-placeholder {
+    color: #ADB4BF;
+}
+
 input::placeholder {
     color: #ADB4BF;
 }
@@ -62,6 +78,7 @@ form.disabled::after {
     border: none;
     width: 20px;
     height: 20px;
+    -webkit-box-shadow: none;
     box-shadow: none;
     top: 12px;
     right: 10px;
@@ -79,6 +96,8 @@ form.disabled::after {
     height: 20px;
     background: url('../../images/icons/clear-btn.svg') no-repeat center;
     opacity: 0;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
     transition: opacity .2s;
 }
 

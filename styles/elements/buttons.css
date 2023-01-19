@@ -1,10 +1,12 @@
 button {
-    display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     cursor: url('../../images/icons/cursor.svg'), pointer;
     border-radius: 5px;
@@ -12,11 +14,13 @@ button {
     border: none;
     width: 158px;
     height: 45px;
+    -webkit-box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
     box-shadow: 0px 5px 10px rgba(149, 206, 90, 0.4);
 }
 
 .btn-white {
     background: #fff;
+    -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid #DADEE2;
     font-weight: 400;
@@ -43,6 +47,7 @@ button {
 
 .btn-green:hover {
     background: #8CC459;
+    -webkit-filter: drop-shadow(0px 5px 8px rgba(149, 206, 90, 0.8));
     filter: drop-shadow(0px 5px 8px rgba(149, 206, 90, 0.8));
 }
 
@@ -53,5 +58,6 @@ button {
 
 .btn-green:disabled {
     background: #ADB4BF;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
